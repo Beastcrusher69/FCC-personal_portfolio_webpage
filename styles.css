@@ -16,8 +16,7 @@ header{
   position:fixed;
   top:0;
   font-size:18px;
-
-  /* background-color:orange; */
+  background:linear-gradient(#DC7633 50%,#EB984E);
 }
 #nav-bar{
   position:absolute;
@@ -31,6 +30,7 @@ header{
   text-decoration:none;
   height:100%;
   padding:0 10px;
+  color:antiquewhite;
 }
 
 #nav-bar a:hover{
@@ -50,24 +50,40 @@ header{
 
 }
 
-/* #title{
+#projects-section{
+  width:100%;
+  background:linear-gradient(135deg,black,white);
+  padding-top:15px;
 
 }
-#sub-title{
 
-} */
+h3{
+  text-align:center;
+  font-size:35px;
+  margin-bottom:15px;
+}
 
 #projects{
   display:flex;
-  height:300px;
+  flex-wrap:wrap;
+  justify-content:space-evenly;
+  /* height:400px; */
 }
 .project-tile{
-  width:30%;
-  height:100%;
+  width:250px;
+  height:250px;
+  background-color:azure;
+  margin:20px;
+ 
 
 }
-.project-image{
-  object-fit: cover;
+.project-name{
+  height:50px;
 }
 
+.project-image {
+  height: calc(100% - 50px);
+  width: 100%;
+  /* object-fit: cover; */
+}
 
